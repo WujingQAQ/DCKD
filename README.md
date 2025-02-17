@@ -1,4 +1,3 @@
-# DCKD
 # Dynamic Curriculum Knowledge Distillation (DCKD)
 
 This repository implements Dynamic Curriculum Knowledge Distillation with Adaptive Weight Strategy, which combines homoscedastic uncertainty-based adaptive weighting and curriculum learning for knowledge distillation.
@@ -129,4 +128,43 @@ losses_dict = {
 ## License
 This project is released under the MIT license.
 
- 
+## Acknowledgements
+
+This project is built upon the excellent [mdistiller](https://github.com/megvii-research/mdistiller) repository, which provides a comprehensive PyTorch library for knowledge distillation algorithms. We extend our sincere gratitude to the original authors for their foundational work.
+
+The mdistiller repository includes:
+- Implementation of classical knowledge distillation methods
+- Support for mainstream CV benchmarks (CIFAR-100, ImageNet, MS-COCO)
+- Official implementation of Decoupled Knowledge Distillation (CVPR 2022)
+- Official implementation of DOT: A Distillation-Oriented Trainer (ICCV 2023)
+
+If you use this code, please also consider citing the original mdistiller paper:
+
+```
+@article{zhao2022dkd,
+  title={Decoupled Knowledge Distillation},
+  author={Zhao, Borui and Cui, Quan and Song, Renjie and Qiu, Yiyu and Liang, Jiajun},
+  journal={arXiv preprint arXiv:2203.08679},
+  year={2022}
+}
+
+@article{zhao2023dot,
+  title={DOT: A Distillation-Oriented Trainer},
+  author={Zhao, Borui and Cui, Quan and Song, Renjie and Liang, Jiajun},
+  journal={arXiv preprint arXiv:2307.08436},
+  year={2023}
+}
+```
+
+## Note on Code Release
+
+This repository currently contains the core implementation of Dynamic Curriculum Knowledge Distillation (DCKD). The complete codebase, including additional experiments, ablation studies, and benchmark results, will be made publicly available upon the publication of our paper.
+
+Stay tuned for:
+- Full implementation details
+- Comprehensive experimental results
+- Additional optimization techniques
+- Benchmark comparisons
+- Pre-trained models
+
+Please watch this repository or check back later for updates.
